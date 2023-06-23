@@ -14,7 +14,7 @@ function ExistingProductsShop() {
       <div className='products'>
         {PRODUCTS().map((product) => (
           <ExistingProduct data={product}/>))}
-
+          
       </div>
       
     </div>

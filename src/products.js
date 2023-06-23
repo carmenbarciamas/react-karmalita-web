@@ -24,7 +24,7 @@ export const PRODUCTS = () => {
             console.error("Error fetching products:", error);
         
         });
-        console.log("hello");
+        
     }, []);
 
     const convertFetchedData = (data) => {
@@ -44,8 +44,7 @@ export const PRODUCTS = () => {
             id: item.id,
             productName: item.productName,
             price: item.price,
-            //productImage: image1
-            productImage: images[imageKey] // Using eval to access the dynamically imported image
+            productImage: images[imageKey] 
           };
         });
       };
@@ -62,7 +61,7 @@ export const PRODUCTS = () => {
     //         ))}
     //     </div>
     // );
-    console.log(products);
+    
     return products; 
 
 } 

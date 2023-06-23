@@ -12,7 +12,7 @@ import { ExistingShopContext } from '../../context/existing-shop-context';
                 <p>
                     <b>{productName}</b>
                 </p>
-                <p> Price: ${price.toLocaleString()}</p>
+                <p> Price: {price.toLocaleString()}€</p>
                 <div className='countHandler'>
                     <button onClick={() => removeItemFromCart(id)}> - </button>
                     <input
